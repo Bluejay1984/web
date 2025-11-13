@@ -11,10 +11,13 @@
       // 2d getContext
       let can = document.querySelector("canvas");
       let ctx = can.getContext("2d");
-
+      ctx.fillStyle = "red";
       ctx.fillRect(100, 30, 30, 30);
+      ctx.fillStyle = "blue";
       ctx.fillRect(112, 60, 6, 15);
+      ctx.fillStyle = "rgba(0,250,38,0.4)";
       ctx.fillRect(70, 70, 90, 6);
+      ctx.fillStyle = "#ccc";
       ctx.fillRect(95, 70, 40, 40);
       ctx.fillRect(95, 110, 6, 30);
       ctx.fillRect(129, 110, 6, 30);

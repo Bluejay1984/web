@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas width="600" height="400" style="border: 1px solid red"></canvas>
+    <script>
+      let ctx = document.querySelector("canvas").getContext("2d");
+      ctx.strokeStyle = "black";
+      ctx.lineWidth = 4;
+      ctx.strokeRect(30, 30, 20, 20);
+      ctx.fillRect(38, 50, 4, 40);
+
+      ctx.beginPath();
+      ctx.moveTo(40, 70);
+      ctx.lineTo(20, 60);
+      ctx.moveTo(40, 70);
+      ctx.lineTo(60, 60);
+      ctx.moveTo(40, 90);
+      ctx.lineTo(20, 120);
+      ctx.moveTo(40, 90);
+      ctx.lineTo(60, 120);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
