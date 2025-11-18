@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas width="600" height="400" style="border: 1px solid red"></canvas>
+    <script>
+      let ctx = document.querySelector("canvas").getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.textBaseline = "middle";
+      ctx.font = "20px arial";
+      ctx.fillText("안녕하세요", 100, 100);
+
+      ctx.font = "32px Nanum Gothic";
+      ctx.fillStyle = "red";
+      ctx.fillText("굿바이", 150, 150);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(
+          to bottom,
+          rgb(217, 236, 236),
+          rgb(10, 241, 241)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      width="1000"
+      height="500"
+      style="background-color: rgb(199, 227, 238)"
+    ></canvas>
+    <script>
+      let ctx = document.querySelector("canvas").getContext("2d");
+      let ftext = 350;
+      ctx.textAlign = "center";
+      for (let i = 1; i < 9; i++) {
+        ctx.fillText(`${ftext}`, 20, i * 60);
+        ftext -= 50;
+      }
+      ctx.fillStyle = "darkgray";
+      for (let i = 1; i < 8; i++) {
+        ctx.fillRect(60, i * 60, 1000, 1);
+      }
+      ctx.fillStyle = "cyan";
+      for (let i = 1; i < 10; i++) {
+        if (i <= 2) {
+          ctx.fillRect(60 * i, 100 + i * 20, 40, 400 - i * 20);
+        } else {
+        }
+      }
+
+      // ctx.strokeStyle = "gray";
+      // ctx.font = "20px arial";
+      // ctx.textBaseline = "top";
+      // ctx.fillText("    0", 0, 475);
+      // ctx.fillText("  50", 0, 410);
+      // ctx.fillText("100", 0, 345);
+      // ctx.fillText("150", 0, 280);
+      // ctx.fillText("200", 0, 215);
+      // ctx.fillText("250", 0, 150);
+      // ctx.fillText("300", 0, 85);
+      // ctx.fillText("350", 0, 20);
+      // ctx.beginPath();
+      // ctx.moveTo(50, 30);
+      // ctx.lineTo(1000, 30);
+      // ctx.stroke();
+      // ctx.fillStyle = "cyan";
+      // ctx.beginPath();
+      // ctx.roundRect(50, 90, 50, 450, 5);
+      // ctx.roundRect(110, 120, 50, 400, 5);
+      // ctx.fill();
+      // ctx.font = "12px calibri";
+      // ctx.fillStyle = "blue";
+      // ctx.fillStyle = "backgroundColor:white";
+      // ctx.fillText("+302%", 58, 75);
+      // ctx.fillText("+228%", 117, 105);
+    </script>
+    <div></div>
+  </body>
+</html>

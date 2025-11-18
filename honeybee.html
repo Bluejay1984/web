@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas width="160" height="180" style="border: 1px solid red"></canvas>
+    <script>
+      let ctx = document.querySelector("canvas").getContext("2d");
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "black";
+      ctx.beginPath();
+      ctx.arc(45, 42, 35, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(115, 42, 35, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.fillStyle = "#FFFFB6";
+      ctx.beginPath();
+      ctx.arc(80, 120, 50, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.fill();
+      ctx.fillStyle = "black";
+      ctx.beginPath();
+      ctx.arc(65, 110, 15, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(95, 110, 15, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.fill();
+    </script>
+  </body>
+</html>
